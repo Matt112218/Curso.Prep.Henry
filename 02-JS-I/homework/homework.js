@@ -155,7 +155,7 @@ function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
 var Random = Math.random(0 , 1)
-return random
+return Random
 }
 
 function esPositivo(numero) {
@@ -211,7 +211,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var dolar = euro * 1.20
+  return dolar
 }
 
 
