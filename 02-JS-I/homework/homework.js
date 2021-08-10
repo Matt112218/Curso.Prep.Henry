@@ -73,7 +73,9 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-
+var string1 = str1
+var string2 = str2
+return string1.length === string2.length
 }
 
 function menosQueNoventa(num) {
@@ -162,12 +164,7 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if (numero > 0) { 
-print('Es positivo')  
-}
-if (numero < 0) {
-print('Es negativo')  
-}
+
 }
 
 function agregarSimboloExclamacion(str) {
