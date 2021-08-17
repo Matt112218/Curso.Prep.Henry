@@ -1,0 +1,23 @@
+Hoy estamos viendo Lógica, 
+donde nos vamos a encontrar con 
+  >bucles (for), 
+  >operadores que significan "Y" (&&),
+  >que significan "O" (||) 
+  >y otro que significa NO (!)
+
+  Los BUCLES son sistemas que se repiten una y otra vez,
+  mientras una condición los deje;
+  cuando esta condición pasa a dar un resultado falso (false),
+  se termina el bucle.
+
+  El operador Y trabajan comparando resultados de condiciones.
+  Si todas las condiciones devuelven verdadero (true)
+  el código que tiene asignado, se ejecuta
+
+  El operador O tambien compara resultados de condiciones,
+  pero solo busca que una de estas devuelva true, 
+  con eso le alcanza para ejecutarse.
+
+  El operador NO se va a encargar de invertir los resultados.
+  Para que un código se ejecute, la condición tiene que ser falsa
+  y viceversa
