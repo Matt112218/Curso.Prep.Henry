@@ -139,17 +139,11 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if ( num1 === 0 || num2 === 0 || num3 === 0 ){
-    return 'Error'
-  }else if ( num1 < 0 || num2 < 0 || num3 < 0 ){
-    return 'Hay negativos'
-  }else if ( num1 > 0 && num1 > num2 && num1 > num3){
-    return 'Número 1 es mayor y positivo'
-  }else if ( num3 > num1 && num3 > num2){
-    return num3 + 1
-  }else {
-    return false
-  }
+  if ( num1 === 0 || num2 === 0 || num3 === 0 ){ return 'Error'}
+  else if ( num1 < 0 || num2 < 0 || num3 < 0 ){return 'Hay negativos'}
+  else if ( num1 > 0 && num1 > num2 && num1 > num3){return 'Número 1 es mayor y positivo'}
+  else if ( num3 > num1 && num3 > num2){return num3 + 1}
+  else {return false}
 }
 
 function esPrimo(numero) {
@@ -181,10 +175,10 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
- for (let i = 0; i < 11; i++) {
-   const element = Array(i*6);
-   
- }
+var tabla6 = []
+  for (let i = 0; i <= 10; i++) {
+  tabla6.push(6 * i)
+} return tabla6
 }
 
 function tieneTresDigitos(numero){
@@ -201,13 +195,12 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var resultado = ''
-  var numero = 0
+  var i = 0
   do {
-    numero + 5
-    resultado = resultado + numero
-  } while (numero < numero + 40);
-return resultado
+    numero = numero + 5;
+    i++;
+  } while (i < 8);
+  return numero
 }
 
 
