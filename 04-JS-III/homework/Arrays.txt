@@ -1,0 +1,5 @@
+Los arrays son ocmo listas, donde en un mismo elemento tenés encerrado más de un elemento a la vez de uno o mas tipos como numeros, string u otros arrays.
+estos elementos tienen dentrodel arraay un orden que comienza por el 0
+0 para el primer elemento,
+1 para el segundo elemento,
+2 para el tercer elemento, y así sucesivamente hasta el último.
