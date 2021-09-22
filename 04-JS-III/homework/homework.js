@@ -58,8 +58,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-palabras.push(' ');
-  return palabras[0] + palabras[palabras.length-1] + palabras[1] + palabras[palabras.length-1] + palabras[2]
+  return palabras.join(' ')
 }
 
 
@@ -67,7 +66,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+// var indice = array.indexOf(elemento)
+  //if (indice === -1) { return false }
+  //else { return true }
+  if (array.includes(elemento)){return true}
+  else{return false}
 }
+
 
 
 function agregarNumeros(numeros) {
@@ -90,6 +95,7 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
  
+  
 }
 
 
