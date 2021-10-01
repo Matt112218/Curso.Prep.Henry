@@ -104,6 +104,10 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
 
+function comparar ( a, b ){ return a - b; }
+numeros.sort( comparar ); 
+return numeros[numeros.length-1]
+
 }
 
 
@@ -111,10 +115,11 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-var arr = Array.from(arguments)
-var producto = 1
-var reductor = (previousValue, currentValue) => previousValue * currentValue
-return arr.reduce(reductor, producto)
+
+var arr = Array.prototype.slice.call(arguments)
+if (arguments.length === 0){return 0}
+const reductor = (previousValue, currentValue) => previousValue * currentValue;
+return arr.reduce(reductor, 1)
 }
 
 
