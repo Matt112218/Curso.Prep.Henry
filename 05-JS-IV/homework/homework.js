@@ -30,7 +30,7 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  objeto.metodo()
+  
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -66,7 +66,7 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario['email'] !== undefined){return false}
+  if (usuario['email'] === null){return false}
   else {return true}
 }
 
@@ -76,8 +76,9 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if( objeto[propiedad] === propiedad){return true}
-  else {return false}
+  for (var i in objeto){
+  if( i === propiedad){return true}
+  }return false
 }
 
 function verificarPassword(usuario, password) {
@@ -85,7 +86,7 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (usuario[password] === password){return true}
+  if (usuario['password'] === password){return true}
   else {return false}
 }
 
@@ -93,8 +94,9 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario[nuevaPassword] = 'nuevagPassword'
-  return usuario[nuevaPassword]
+  usuario['password'] = nuevaPassword
+
+  return usuario
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -102,7 +104,9 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
+usuario.amigos.push(nuevoAmigo)
 
+return usuario
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -111,6 +115,9 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  for (var i=0; i<usuarios.length; i++){
+   i['esPremium'] = true
+  }return usuarios
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -120,6 +127,10 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  var contador = 0
+  for (var i=0; i<posts.length; i++){
+    contador = contador + usuario.posts.i['likes']
+  }return contador
 }
 
 function agregarMetodoCalculoDescuento(producto) {
