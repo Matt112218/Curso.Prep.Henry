@@ -1,0 +1,11 @@
+Un objeto no cambia mucho su definición fuera de la programación,
+es una cosa simple con caracteristicas, que les vamos a decir propiedades.
+Estas propiedades tienen un nombre y una descripción, es decir una clave y un valor.
+Ahora si en la parte de "valor", estas propiedades tienen una utilidad que no sea simplemente llevar un dato
+(o sea que tiene una función), pasa a llamarse método.
+A la hora de trabajar con un objeto, si queremos acceder a todas las propiedades, necesitamos usar un bucle
+es el bucle "for... in loop".
+Pero si queremos acceder a una sola propiedad del objeto necesitaremos llamarlo o invocarlo poniendo el nombre del objeto,
+un punto y el nombre de la propiedad, así: "objeto.propiedad"; o bien podemos utilizar la notación de los corchetes,
+para este caso se necesita poner el nombre de la propiedad entrecorchetes y entre comillas  a la vez, así: objeto["propiedad"],
+a no ser que antes hayamos armado una variable que tenga el nombre de esa propiedad, en ese caso ponemos el nombre de la variable sin comillas.
