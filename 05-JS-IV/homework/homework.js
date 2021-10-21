@@ -30,7 +30,7 @@ function invocarMetodo(objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  
+  objeto[metodo]()
 }
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
@@ -66,10 +66,9 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario['email'] === null){return false}
-  else {return true}
+  if (usuario['email']){return true}
+  else {return false}
 }
-
 
 function tienePropiedad(objeto, propiedad) {
   // Devuelve "true" si el objeto tiene el valor del argumento "propiedad"
@@ -115,8 +114,9 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  var premium = 'esPremium'
   for (var i=0; i<usuarios.length; i++){
-   i['esPremium'] = true
+  usuarios[i][premium] = true
   }return usuarios
 }
 
@@ -128,8 +128,8 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
   var contador = 0
-  for (var i=0; i<posts.length; i++){
-    contador = contador + usuario.posts.i['likes']
+  for (var i=0; i<usuario.posts.length; i++){
+    contador = contador + usuario.posts[i].likes
   }return contador
 }
 
@@ -143,7 +143,13 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+var precioDescontado = 0
+  producto.calcularPrecioDescuento = function(){
+    precioDescontado = this.precio - (this.precio * this.porcentajeDeDescuento);
+    return precioDescontado;
+  }
 
+return producto;
 }
 
 // No modificar nada debajo de esta línea
