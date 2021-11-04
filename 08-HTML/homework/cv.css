@@ -1,0 +1,17 @@
+body{
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+#titulo{
+    position: relative;
+    border-bottom: solid #aaa 0.125em;
+    height: 200px;
+}
+#foto{
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    width:200px;
+    height: 200px;
+}
