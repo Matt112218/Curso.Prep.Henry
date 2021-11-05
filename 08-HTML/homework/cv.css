@@ -9,9 +9,17 @@ body{
     height: 200px;
 }
 #foto{
+    
     position: absolute;
     top: 0px;
-    right: 50px;
+    right: 5%;
     width:200px;
     height: 200px;
+}
+h1{
+    border: 1px solid #ccc;
+    position:relative;
+    top: 90px;
+    margin-right: 201px;
+    width: 95%;
 }
