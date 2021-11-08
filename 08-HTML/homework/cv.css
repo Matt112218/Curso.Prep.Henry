@@ -1,25 +1,49 @@
 body{
-    padding-left: 15%;
-    padding-right: 15%;
-
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #eeeeee;
 }
 #titulo{
     position: relative;
     border-bottom: solid #aaa 0.125em;
-    height: 200px;
+    height: 100px;
+    text-align: center;
 }
 #foto{
-    
-    position: absolute;
-    top: 0px;
-    right: 5%;
-    width:200px;
-    height: 200px;
+    float: right;
+    margin: 5px 0 10px 10px;
+    width:220px;
+    height: 220px;
+    border: 2px solid #444;
 }
 h1{
     border: 1px solid #ccc;
     position:relative;
-    top: 90px;
-    margin-right: 201px;
-    width: 95%;
+    top: 45%;
+}
+h3{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+.educación{
+    padding-bottom: 10px;
+}
+.contenido{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95em;
+}
+.h{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    
+}
+h4{
+    font-size: 00.9em;
+}
+nav{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95em;
 }
