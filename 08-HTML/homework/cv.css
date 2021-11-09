@@ -1,49 +1,66 @@
 body{
     padding-left: 20%;
     padding-right: 20%;
-    background-color: #eeeeee;
+    background-color: #ddd;
 }
 #titulo{
     position: relative;
-    border-bottom: solid #aaa 0.125em;
     height: 100px;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+nav{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95em;
+}
+#Descripción_personal{
+    overflow: auto;
 }
 #foto{
     float: right;
     margin: 5px 0 10px 10px;
     width:220px;
     height: 220px;
+
     border: 2px solid #444;
+    zoom: 1;
 }
-h1{
-    border: 1px solid #ccc;
-    position:relative;
-    top: 45%;
-}
-h3{
-    display: inline-block;
+.h{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    border-bottom: solid #aaa 0.125em;
+    display:block;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 0%;
 }
+h1{
+    border: 0.09em solid #aaa;
+    position:relative;
+    top: 45%;
+}
 .educación{
     padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.95em;
 }
 .contenido{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.95em;
 }
-.h{
+.h-{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: capitalize;
-    
-}
-h4{
     font-size: 00.9em;
 }
-nav{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.95em;
+#Hobbies{
+    overflow: auto;
+}
+#lis{
+    float: right;
+    height: 234.85px;
+    width: 200px;
+    margin-top: 5px;
+    border: 2px solid #444;
 }
