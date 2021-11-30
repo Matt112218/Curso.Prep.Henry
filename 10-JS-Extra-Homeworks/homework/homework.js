@@ -23,8 +23,44 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
-  var obj = {}
+  var abc = 'abcdefghijklmnopqrstuvwxyz'
+  var cona =0; var conb =0; var conc =0; var cond =0; var cone =0; var conf =0;
+  var cong =0; var conh =0; var coni =0; var conj =0; var conk =0; var conl =0;
+  var conm =0; var conn =0; var cono =0; var conp =0; var conq =0; var conr =0
+  var cons =0; var cont =0; var conu =0; var conv =0; var conw =0; var conx =0
+  var conz =0; var cony =0;
   
+  var obj = {}
+  for (var i=0; i<string.length; i++){
+    switch (string.charAt(i)){
+      case 'a': cona= cona+1; break; case 'b': conb= conb+1; break;
+      case 'c': conc= conc+1; break; case 'd': cond= cond+1; break;
+      case 'e': cone= cone+1; break; case 'f': conf= conf+1; break;
+      case 'g': cong= cong+1; break; case 'h': conh= conh+1; break;
+      case 'i': coni= coni+1; break; case 'j': conj= conj+1; break;
+      case 'k': conk= conk+1; break; case 'l': conl= conl+1; break;
+      case 'm': conm= conm+1; break; case 'n': conn= conn+1; break;
+      case 'o': cono= cono+1; break; case 'p': conp= conp+1; break;
+      case 'q': conq= conq+1; break; case 'r': conr= conr+1; break;
+      case 's': cons= cons+1; break; case 't': cont= cont+1; break;
+      case 'u': conu= conu+1; break; case 'v': conv= conv+1; break;
+      case 'w': conw= conw+1; break; case 'x': conx= conx+1; break;
+      case 'y': cony= cony+1; break; case 'z': conz= conz+1; break;
+    }
+  }
+  obj.a = cona; obj.b = conb; obj.c = conc; obj.d = cond;
+  obj.e = cone; obj.f = conf; obj.g = cong; obj.h = conh;
+  obj.i = coni; obj.j = conj; obj.k = conk; obj.l = conl;
+  obj.m = conm; obj.n = conn; obj.o = cono; obj.p = conp;
+  obj.q = conq; obj.r = conr; obj.s = cons; obj.t = cont;
+  obj.u = conu; obj.v = conv; obj.w = conw; obj.x = conx;
+  obj.y = cony; obj.z = conz;
+  for(var i=0; i<abc.length; i++){
+    if (obj[abc.charAt(i)]===0){
+    delete obj[abc.charAt(i)]
+  }  
+}
+return obj
 }
 
 
@@ -51,14 +87,6 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
-
- // var split = str.split()
- // var splitInv = []
- // for (var i=0; i< split.length; i++){
- //   splitInv.push(split[i].split('').reverse().join(''))
- // }
-
- // return splitInv.join(' ')
  var split = str.split(' ');
 var splitInv = [];
 
@@ -77,11 +105,11 @@ function capicua(numero){
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
   var num = numero.toString();
-  var numInv = num.split().reverse().join("")
+  var numInv = num.split('').reverse().join("")
   if (num === numInv) {
-    return "No es capicua"
-  } else {
     return "Es capicua"
+  } else {
+    return "No es capicua"
   }
   
 }
